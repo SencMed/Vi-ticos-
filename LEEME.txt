@@ -1,26 +1,13 @@
-MIS VIÁTICOS — VERSIÓN ACTUALIZADA
+MIS VIÁTICOS — BOTÓN GUARDAR AL FINAL (v6)
 
-CONTENIDO
-- index.html: aplicación
-- manifest.json: instalación como PWA
-- sw.js: caché para uso sin conexión después de la primera carga
-- icon.svg, icon-192.png, icon-512.png: iconos
+CAMBIO
+El botón GUARDAR DÍA COMPLETO queda debajo de Observaciones del Día, en el flujo normal de la página (no flotante). Se actualizó el service worker para buscar primero el HTML nuevo y retirar cachés anteriores.
 
-FUNCIONES
-- Viáticos diarios y cortes de pago (1–10 pago el 18; 11–fin pago el 8 del mes siguiente).
-- Horas extras con varios períodos por día, cálculo automático y turnos que cruzan medianoche.
-- Marcador opcional de emergencia.
-- Observación independiente por día.
-- Historial mensual y copia/restauración JSON.
-- Tarifas configurables como fijas o variables por registro.
+PUBLICAR DESDE IPHONE
+1. Hacé una copia JSON desde la sección Respaldo si ya tenés registros.
+2. Descomprimí este ZIP en Archivos.
+3. En GitHub, abrí el repositorio mis-viaticos y subí/reemplazá TODOS estos seis archivos en la raíz: index.html, manifest.json, sw.js, icon.svg, icon-192.png e icon-512.png.
+4. Tocá Commit changes.
+5. Esperá 1–3 minutos. Cerrá por completo la app instalada. Abrí la página de GitHub Pages en Safari y recargala. Si Safari muestra la versión nueva, abrí de nuevo el acceso instalado.
 
-PUBLICAR EN GITHUB PAGES DESDE IPHONE
-1. Descomprimí este ZIP en la app Archivos.
-2. Entrá a tu repositorio de GitHub llamado mis-viaticos.
-3. Tocá Add file > Upload files.
-4. Subí los seis archivos: index.html, manifest.json, sw.js, icon.svg, icon-192.png e icon-512.png. Si pregunta, reemplazá los archivos anteriores.
-5. Tocá Commit changes.
-6. Abrí la dirección de GitHub Pages de tu repositorio. Si la app ya estaba instalada, cerrala y volvé a abrirla. Si muestra la versión vieja, esperá unos minutos y recargá.
-
-IMPORTANTE
-Los datos se guardan localmente en el navegador/dispositivo y no se sincronizan automáticamente. Antes de reemplazar o cambiar de navegador, descargá una copia JSON desde la sección Respaldo. Si ya tenías datos guardados en el mismo navegador y mismo sitio, esta versión conserva las claves existentes de viáticos mv2_records y mv2_rates.
+No borres datos del navegador: los registros se guardan localmente.
