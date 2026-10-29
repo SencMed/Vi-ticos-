@@ -1,19 +1,26 @@
-MIS VIÁTICOS — VERSIÓN 2
+MIS VIÁTICOS — VERSIÓN ACTUALIZADA
 
-Tarifas iniciales precargadas en córdobas (C$):
-Desayuno interior: 100
-Desayuno exterior: 200
-Almuerzo interior: 130
-Almuerzo exterior: 300
-Almuerzo Isla de Ometepe: 350
-Cena interior: 110
-Cena exterior: 200
-Taxi: 90
-Bus: 100
-Ferry: 650
-Lancha: 100
-Hospedaje: 1100
+CONTENIDO
+- index.html: aplicación
+- manifest.json: instalación como PWA
+- sw.js: caché para uso sin conexión después de la primera carga
+- icon.svg, icon-192.png, icon-512.png: iconos
 
-Los importes son editables desde la pestaña Tarifas. Los datos de la aplicación se guardan localmente en el navegador del dispositivo; usá la función de respaldo para proteger tus registros.
+FUNCIONES
+- Viáticos diarios y cortes de pago (1–10 pago el 18; 11–fin pago el 8 del mes siguiente).
+- Horas extras con varios períodos por día, cálculo automático y turnos que cruzan medianoche.
+- Marcador opcional de emergencia.
+- Observación independiente por día.
+- Historial mensual y copia/restauración JSON.
+- Tarifas configurables como fijas o variables por registro.
 
-Para publicar en GitHub Pages, subí los archivos de esta carpeta directamente a la raíz del repositorio y activá Pages desde Settings > Pages.
+PUBLICAR EN GITHUB PAGES DESDE IPHONE
+1. Descomprimí este ZIP en la app Archivos.
+2. Entrá a tu repositorio de GitHub llamado mis-viaticos.
+3. Tocá Add file > Upload files.
+4. Subí los seis archivos: index.html, manifest.json, sw.js, icon.svg, icon-192.png e icon-512.png. Si pregunta, reemplazá los archivos anteriores.
+5. Tocá Commit changes.
+6. Abrí la dirección de GitHub Pages de tu repositorio. Si la app ya estaba instalada, cerrala y volvé a abrirla. Si muestra la versión vieja, esperá unos minutos y recargá.
+
+IMPORTANTE
+Los datos se guardan localmente en el navegador/dispositivo y no se sincronizan automáticamente. Antes de reemplazar o cambiar de navegador, descargá una copia JSON desde la sección Respaldo. Si ya tenías datos guardados en el mismo navegador y mismo sitio, esta versión conserva las claves existentes de viáticos mv2_records y mv2_rates.
