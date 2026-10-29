@@ -1,22 +1,19 @@
 MIS VIÁTICOS — VERSIÓN 2
 
-Archivos que deben estar directamente en la raíz del repositorio GitHub:
-- index.html
-- manifest.json
-- sw.js
-- icon.svg
-- icon-192.png
-- icon-512.png
+Tarifas iniciales precargadas en córdobas (C$):
+Desayuno interior: 100
+Desayuno exterior: 200
+Almuerzo interior: 130
+Almuerzo exterior: 300
+Almuerzo Isla de Ometepe: 350
+Cena interior: 110
+Cena exterior: 200
+Taxi: 90
+Bus: 100
+Ferry: 650
+Lancha: 100
+Hospedaje: 1100
 
-Características:
-- Registro diario con botones e iconos para cada concepto.
-- Tarifas configurables en la app.
-- Repetir toque suma unidades; mantener presionado o clic derecho resta una unidad.
-- Historial por día, edición y eliminación.
-- Resumen de cobros por cortes: días 1–10 pago el 18 del mismo mes; días 11–fin de mes pago el 8 del siguiente.
-- Copia de seguridad y restauración JSON.
-- Datos guardados localmente en el navegador del dispositivo.
+Los importes son editables desde la pestaña Tarifas. Los datos de la aplicación se guardan localmente en el navegador del dispositivo; usá la función de respaldo para proteger tus registros.
 
-IMPORTANTE:
-La publicación en GitHub Pages contiene el código de la app, no tus registros personales. Los registros quedan en el navegador del teléfono. Haz copias de seguridad periódicas.
-Para actualizar una app ya publicada, reemplaza los archivos existentes por estos y haz Commit changes. Luego abre la web y recarga; si el iPhone muestra la versión anterior, cierra la app y vuelve a abrirla.
+Para publicar en GitHub Pages, subí los archivos de esta carpeta directamente a la raíz del repositorio y activá Pages desde Settings > Pages.
