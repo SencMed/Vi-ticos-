@@ -1,4 +1,4 @@
-MIS VIÁTICOS — BOTÓN GUARDAR AL FINAL (v6)
+MIS VIÁTICOS — BOTÓN GUARDAR AL FINAL (v7)
 
 CAMBIO
 El botón GUARDAR DÍA COMPLETO queda debajo de Observaciones del Día, en el flujo normal de la página (no flotante). Se actualizó el service worker para buscar primero el HTML nuevo y retirar cachés anteriores.
